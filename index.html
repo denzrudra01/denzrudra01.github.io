@@ -177,19 +177,53 @@
     </section>
 
     <section class="connect" id="connect">
-      <div class="container">
-        <div class="label">04 / Make Contact</div>
-        <h2>FIND <span>DENZ RUDRA.</span></h2>
-        <p class="lead">Your next step is to connect your real public gaming profiles here.</p>
-        <div class="socials">
-          <!-- Replace # with your actual profile URLs -->
-          <a class="social" href="#" data-profile="YouTube">YouTube ↗</a>
-          <a class="social" href="#" data-profile="Instagram">Instagram ↗</a>
-          <a class="social" href="#" data-profile="Discord">Discord ↗</a>
-        </div>
-        <p class="note">Social buttons are placeholders until you add your real links.</p>
-      </div>
-    </section>
+  <div class="container">
+
+    <div class="label">04 / MAKE CONTACT</div>
+
+    <h2>
+      FIND <span>DENZ RUDRA.</span>
+    </h2>
+
+    <p class="lead">
+      Join the Denz Army. Follow my gaming journey,
+      watch my gameplay, and connect with the community.
+    </p>
+
+    <div class="socials">
+
+      <!-- Instagram -->
+      <a class="social"
+         href="https://instagram.com/denz_rudra?dlrf=bWxkOXFpN3VudmJk"
+         target="_blank"
+         rel="noopener noreferrer">
+        📸 INSTAGRAM ↗
+      </a>
+
+      <!-- Discord -->
+      <a class="social"
+         href="https://discord.gg/ZZUBYS7FtE"
+         target="_blank"
+         rel="noopener noreferrer">
+        🎮 JOIN DISCORD ↗
+      </a>
+
+      <!-- YouTube -->
+      <a class="social"
+         href="https://youtube.com/@denzarmy?si=gnPttnmPuruReUB4"
+         target="_blank"
+         rel="noopener noreferrer">
+        ▶ YOUTUBE ↗
+      </a>
+
+    </div>
+
+    <p class="note">
+      ONE IDENTITY. ONE COMMUNITY. DENZ ARMY.
+    </p>
+
+  </div>
+</section>
   </main>
 
   <footer>
@@ -207,11 +241,7 @@
       menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
       menuButton.textContent = open ? '✕' : '☰';
     });
-    document.querySelectorAll('.navlinks a').forEach(a => a.addEventListener('click', () => {
-      navlinks.classList.remove('open');
-      menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.textContent = '☰';
-    }));
+    
     document.getElementById('year').textContent = new Date().getFullYear();
     document.querySelectorAll('[data-profile]').forEach(a => a.addEventListener('click', e => {
       if (a.getAttribute('href') === '#') {
